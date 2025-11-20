@@ -454,38 +454,8 @@ Device: NVIDIA RTX A4000
 | **Formal Verification** | ❌ Not integrated | ✅ NuSMV built-in | Mathematical proof |
 | **Context Understanding** | ⚠️ Limited | ✅ Transformer-based | Better accuracy |
 | **New Error Types** | ❌ Manual rules | ✅ Retrain on new data | Adaptive learning |
-| **Cost** | $5,000-$25,000/year | ✅ Open source | 100% cost savings |
 
-### Return on Investment (ROI) Analysis
 
-**For a typical manufacturing facility (100 PLC programs/year)**:
-
-**Traditional Approach**:
-- Manual review: 100 files × 75 min × $95/hr = **$118,750**
-- Missed bugs causing downtime: 15 bugs × $50,000/incident = **$750,000**
-- **Total Cost**: $868,750/year
-
-**AI + Verification System**:
-- Compute cost: 100 files × $0.02 = **$2**
-- Engineering review of AI suggestions: 100 files × 15 min × $95/hr = **$23,750**
-- Prevented downtime (94% detection): Saves ~$705,000
-- **Total Cost**: $23,752/year
-- **Net Savings**: **$845,000/year (97.3% cost reduction)**
-- **ROI**: **3,560% return on investment**
-- **Payback Period**: Immediate (system is free/open-source)
-
-### Benchmark Performance
-
-**Dataset**: PLCBench-2025 (standardized PLC error detection benchmark)
-| System | Accuracy | F1 Score | Fix Rate | Speed |
-|--------|----------|----------|----------|-------|
-| **Our System** | **96.5%** | **0.968** | **77%** | **7.4s** |
-| CodeBERT baseline | 89.2% | 0.891 | 0% | 0.15s |
-| GPT-4 (zero-shot) | 78.4% | 0.782 | 51% | 45s |
-| Static analyzer (CODESYS) | 71.3% | 0.698 | 0% | 12s |
-| PLCopen XML checker | 43.7% | 0.421 | 0% | 2s |
-
-**Ranking**: #1 in combined detection + fixing capability
 
 ## Known Limitations
 
