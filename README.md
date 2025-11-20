@@ -522,69 +522,12 @@ Device: NVIDIA RTX A4000
 5. **Deploy Pipeline** - Integrate into CI/CD for automated PLC code review
 6. **Real TIA Portal Integration** - Use Openness API for direct project analysis
 
-## Contributing
-
-To contribute:
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-error-type`
-3. Add tests for new functionality
-4. Update documentation (README, error catalogs)
-5. Submit pull request with detailed description
-
-### Adding New Error Types
-1. Update `ErrorType` enum in `codebert_model.py`
-2. Add training examples to `generate_training_data.py`
-3. Update `ERROR_TYPE_NAMES` in `ai_fixer.py`
-4. Add NuSMV property to `xml_to_nusmv.py`
-5. Retrain model with expanded dataset
-
-## License
-
-MIT License - See LICENSE file for details
-
-## Acknowledgments
-
-- **Microsoft CodeBERT**: Pre-trained model for code understanding
-- **Salesforce CodeT5**: Code generation and fixing
-- **NuSMV**: Formal verification tool from FBK
-- **Siemens TIA Portal**: Industrial automation platform
-- **HuggingFace Transformers**: ML model framework
-- **PyTorch**: Deep learning framework with CUDA support
-
-## Research References
-
-### Core Technologies
-- **CodeBERT**: Feng et al. (2020), "CodeBERT: A Pre-Trained Model for Programming and Natural Languages" - https://arxiv.org/abs/2002.08155
-- **CodeT5**: Wang et al. (2021), "CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation" - https://arxiv.org/abs/2109.00859
-- **NuSMV**: Cimatti et al. (2002), "NuSMV 2: An OpenSource Tool for Symbolic Model Checking" - https://nusmv.fbk.eu/
-
-### Methodology
-- **Supervised Learning for Code**: Allamanis et al. (2018), "A Survey of Machine Learning for Big Code and Naturalness"
-- **Transfer Learning**: Devlin et al. (2019), "BERT: Pre-training of Deep Bidirectional Transformers" (foundation for CodeBERT)
-- **Formal Verification**: Clarke et al. (1999), "Model Checking" (foundational work)
-
-### Domain Standards
-- **IEC 61508**: Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems
-- **IEC 61511**: Functional Safety - Safety Instrumented Systems for the Process Industry Sector
-- **PLCopen XML**: Standard IEC 61131-3 XML exchange format
 
 ### Related Work
 - **PLC Verification**: Fernández & Mota (2018), "Formal Verification of Safety PLC Programs"
 - **Industrial ML**: Smith et al. (2021), "Machine Learning for Industrial Control Systems Security"
 - **Static Analysis**: Johnson (2019), "Static Analysis of Ladder Logic Programs"
 
-## Contact
-
-For questions, issues, or collaboration:
-- Open a GitHub issue
-- Check `Export/Buggy/ENHANCED_BUGS_SUMMARY.md` for bug documentation
-- Review `verification/pipeline_results/final_report.json` for latest results
-
----
-
-**Status**: 🔬 Proof-of-concept system demonstrating AI detection + automatic fixing + formal verification for PLC code
-
-**Research Status**: 📄 First known system combining CodeBERT + CodeT5 + NuSMV for industrial control code
 
 **Last Updated**: November 19, 2025
 
