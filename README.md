@@ -347,11 +347,6 @@ The system checks these safety properties:
 - **Sequential Control**: 5 files, 97.8% detection accuracy, 82% fix rate
 - **Alarm Handlers**: 3 files, 88.9% detection accuracy, 70% fix rate
 
-**Total Real-World Impact**:
-- **Bugs Detected**: 127/136 (93.4%) - 9 false negatives (complex timing issues)
-- **Bugs Fixed**: 93/127 detected (73.2%) - successfully repaired
-- **Time Savings**: Average 45 minutes per file vs manual review (92% reduction)
-- **Cost Reduction**: ~$12,500 saved in engineering hours (35 files × $357/file)
 
 ## System Requirements
 
